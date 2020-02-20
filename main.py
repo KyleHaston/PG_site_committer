@@ -9,6 +9,10 @@ import credentials
 def main():
     # Open the local file, and read some info.
     print('asdf')
+    with open('some_data.txt','r') as in_file:
+        with open('../../PG-Site-Forecast-Buddy/PG-Site-Forecast-Buddy/site_data.py','w') as out_file:
+            data = in_file.read()
+            print(data)
 
     # Write it to the other file.
     print('sadf')
