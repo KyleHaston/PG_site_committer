@@ -24,6 +24,7 @@ def main():
                     out_file.write(today_str)
 
                     print('    commit the other file: ')  # Commit the other file.
+                    os.system('git pull')
                     os.system('git commit -am "commit for ' + line + '"')
                     os.system('git push')
                     sys.exit(0)
