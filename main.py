@@ -9,7 +9,6 @@ import sys
 
 def main():
     # Open the input file, and read some info.
-    print('asdf')
     with open('some_data.txt', 'r') as in_file:
         with open('output.txt', 'w') as out_file:
             data = in_file.readlines()
