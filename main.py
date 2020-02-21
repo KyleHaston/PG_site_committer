@@ -20,7 +20,8 @@ def main():
             # If there is data to be written today, write it to the other file.
             for line in data:
                 if today_str in line:
-                    print('    writing this to the file: ' + line + '\n')
+                    print('    writing this to the file: ' + line)
+                    print('')
                     out_file.write(today_str)
 
                     print('    commit the other file: ')  # Commit the other file.
