@@ -22,7 +22,7 @@ def main():
             for line in data:
                 if today_str in line:
                     print('    writing this to the file: ' + line)
-                    out_file.writelines(data)
+                    out_file.write(str(data))
 
                     print('    commit the other file: ')  # Commit the other file.
                     os.system('git commit -am "commit for ' + line + '"')
