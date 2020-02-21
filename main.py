@@ -10,7 +10,7 @@ import sys
 def main():
     # Open the input file, and read some info.
     with open('some_data.txt', 'r') as in_file:
-        with open('output.txt', 'w') as out_file:
+        with open('output.txt', 'a') as out_file:
             data = in_file.readlines()
 
             # Get the date.
