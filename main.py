@@ -9,7 +9,7 @@ import sys
 
 def main():
     # Open the input file, and read some info.
-    os.system('cd Pycharm_Projects/PG_site_committer/PG_site_committer/')
+    # os.system('cd Pycharm_Projects/PG_site_committer/PG_site_committer/')  # If you don't cd in the cron job, use this.
     with open('some_data.txt', 'r') as in_file:
         with open('output.txt', 'a') as out_file:
             data = in_file.readlines()
