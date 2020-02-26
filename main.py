@@ -20,6 +20,7 @@ def main():
 
             # If there is data to be written today, write it to the other file.
             for line in data:
+                print(today_str + ' vs ' + line)
                 if today_str in line:
                     print('    writing this to the file: ' + line)
                     out_file.write(today_str + '\n')
@@ -31,7 +32,10 @@ def main():
                     sys.exit(0)
 
                 else:
-                    print('    not writing anything today!')
+                    print('.', end='')
+
+            # if we reach this, we've reached the end of the data file and did not write anything
+            print('    not writing anything today!')
 
 
 if __name__ == "__main__":
