@@ -20,7 +20,7 @@ def main():
 
             # If there is data to be written today, write it to the other file.
             for line in data:
-                print(today_str + ' vs ' + line)
+                # print(today_str + ' vs ' + line)
                 if today_str in line:
                     print('    writing this to the file: ' + line)
                     out_file.write(today_str + '\n')
